@@ -13,6 +13,8 @@ pub fn register_raw(process_exe_module_handle: *mut c_void)
     register_raw_as_c_script_engine_register_object_type_method_ptr(process_exe_module_handle);
     register_raw_as_c_script_engine_register_object_type_method_hook();
 
+    register_raw_collectables_table_add_entry_inner_method_ptr(process_exe_module_handle);
+    register_raw_collectables_table_add_entry_inner_method_hook();
     register_raw_collectables_table_constructor_ptr(process_exe_module_handle);
     register_raw_collectables_table_constructor_hook();
 
