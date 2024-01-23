@@ -1,0 +1,6 @@
+/.vscode/*
+!/.vscode/extensions.json
+!/.vscode/settings.shared.json
+!/.vscode/tasks.shared.json
+/bundle
+/dev-workspace

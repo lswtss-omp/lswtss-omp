@@ -1,0 +1,6 @@
+[package]
+name = "lswtss-open-modding-platform-driver-debug-console"
+version = "1.0.0"
+edition = "2018"
+
+[dependencies]

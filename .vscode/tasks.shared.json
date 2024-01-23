@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-lswtss-omp-bundle",
+      "type": "shell",
+      "command": "cargo",
+      "args": [
+        "run",
+        "--",
+        "build-bundle",
+      ],
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}/bundle-dev-tools"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "debug-lswtss-omp-bundle",
+      "type": "shell",
+      "command": "cargo",
+      "args": [
+        "run",
+        "--",
+        "debug-bundle",
+        "-l",
+        "${input:lswtssDirPath}",
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+      },
+      "options": {
+        "cwd": "${workspaceFolder}/bundle-dev-tools"
+      },
+      "problemMatcher": []
+    },
+  ],
+  "inputs": [
+    {
+      "id": "lswtssDirPath",
+      "description": "lswtssDirPath",
+      "type": "promptString",
+    }
+  ]
+}
