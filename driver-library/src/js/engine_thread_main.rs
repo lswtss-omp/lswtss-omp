@@ -12,7 +12,13 @@ pub async fn js_engine_thread_main()
 {
     let engine_main_module_file_path = std::env::current_dir()
         .unwrap()
-        .join("main.js");
+        .join("lswtss-omp-main.js");
+
+    std::fs::write(
+        &engine_main_module_file_path,
+        "",
+    )
+    .unwrap();
 
     let engine_main_module_specifier =
         deno_runtime::deno_core::ModuleSpecifier::from_file_path(&engine_main_module_file_path)
