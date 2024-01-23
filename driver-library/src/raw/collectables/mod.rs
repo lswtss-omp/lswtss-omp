@@ -6,6 +6,8 @@ mod graph_val;
 mod int_val;
 mod string_val;
 mod table;
+mod table_entry;
+mod table_structure;
 mod table_value;
 
 pub use bool_val::*;
@@ -16,4 +18,6 @@ pub use graph_val::*;
 pub use int_val::*;
 pub use string_val::*;
 pub use table::*;
+pub use table_entry::*;
+pub use table_structure::*;
 pub use table_value::*;
