@@ -29,7 +29,6 @@ pub unsafe extern "stdcall" fn raw_nu_file_device_dat_vtable_24_method_hook_deto
             let resource_canon_path = get_resource_canon_path(unknown_param_3_as_str);
 
             if fetch_is_disk_resource_registered(&resource_canon_path) {
-                log::info!("rewire");
                 return RAW_NTT_FILE_FILE_DEVICE_PC_VTABLE_24_METHOD_PTR_OPTION.unwrap()(
                     RAW_NTT_FILE_HOST_FILE_DEVICE_PC_HANDLE_OPTION.unwrap(),
                     unknown_param_2,
