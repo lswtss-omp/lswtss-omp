@@ -1,0 +1,10 @@
+[package]
+name = "lswtss-open-modding-platform-mod-bootstrapper-core"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+lswtss-open-modding-platform-foundation = { path = "../foundation" }
+rand = "0.8.0"
+serde = "^1.0.0"
+serde_json = "^1.0.0"

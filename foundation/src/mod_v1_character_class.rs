@@ -1,4 +1,4 @@
-#[derive(serde::Deserialize, serde::Serialize, schemars::JsonSchema)]
+#[derive(Clone, PartialEq, Debug, serde::Deserialize, serde::Serialize, schemars::JsonSchema)]
 #[serde(rename_all = "kebab-case")]
 pub enum ModV1CharacterClass
 {
